@@ -1,0 +1,108 @@
+/* containers */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffccd5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.slide, .qslide, .endslide {
+    background: rgba(255, 255, 255, 0.632);
+    padding: 40px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.225);
+    display: none;
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+#endSlide {
+    width: fit-content;
+}
+
+/* text */
+h1 {
+    color: #d63384;
+}
+p {
+    font-size: 28px;
+    color: #333;
+}
+.hidden-message {
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #e63946;
+}
+
+/* buttons icons images */
+.heart {
+    font-size: 30px;
+    color: #d63384;
+}
+button {
+    background: rgba(196, 196, 196, 0.155);
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background 0.4s;
+}
+button:hover {
+    background: #ffccd5;
+}
+.decision-button {
+    background: rgba(196, 196, 196, 0.155);
+    color: #333333;
+    border: none;
+    padding: 20px 35px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-inline: 20px;
+    transition: background 0.3s;
+}
+#shy-img {
+    width: 80%;
+    height: auto;
+}
+#crazy-img {
+    width: 90%;
+    height: auto;
+}
+.cats-img {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+}
+
+/* states */
+.active {
+    display: block;
+    opacity: 1;
+}
+
+.exiting {
+    transform: translateY(100%) !important;
+    opacity: 0 !important;
+}
+
+.entering {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.hidden {
+    display: none;
+}

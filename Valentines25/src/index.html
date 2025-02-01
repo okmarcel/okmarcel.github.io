@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walentynkowa wiadomość</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="slide1" class="slide active">
+        <p>Hej</p>
+        <button onclick="animateSlide(1)">Kliknij</button>
+    </div>
+    <div id="slide2" class="slide">
+        <p>Chciałem ci tylko powiedzieć...</p>
+        <img src="../assets/shy.png" alt="(zdjecie sie nie zaladowalo :c)" class="slide-image" id="shy-img">
+        <button onclick="animateSlide(2)">Kliknij</button>
+    </div>
+    <div id="slide3" class="slide">
+        <p>że jesteś słodka i zawróciłaś mi w głowie</p>
+        <img src="../assets/crazy.webp" alt="(zdjecie sie nie zaladowalo :c)" class="slide-image" id="crazy-img">
+        <button onclick="animateSlide(3)">Kliknij</button>
+    </div>
+    <div id="slide4" class="slide">
+        <p>Więc mam ważne pytanie</p>
+        <button onclick="animateSlide(4)">Kliknij</button>
+    </div>
+    <div id="questionSlide" class="qslide">
+        <h1>Czy zostaniesz moją walentynką? <span class="heart">❤</span></h1>
+        <button class="decision-button" onclick="clickedYes()">Tak</button>
+        <button class="decision-button" id="no-button" onclick="clickedNo()">Nie</button>
+    </div>
+    <div id="endSlide" class="slide">
+        <p>To my w walentynki</p>
+        <span><img src="../assets/cats1.jpg" alt="(zdjecie sie nie zaladowalo :c)" class="cats-img"></span>
+        <span> <img src="../assets/cats2.jpg" alt="(zdjecie sie nie zaladowalo :c)" class="cats-img"></span>
+        <span></span><img src="../assets/cats3.jpg" alt="(zdjecie sie nie zaladowalo :c)" class="cats-img"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
